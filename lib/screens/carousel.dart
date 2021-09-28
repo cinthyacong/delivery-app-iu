@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
+var imageURL1 = "assets/pizza_1.jpg";
+var imageURL2 = "assets/pizza_2.jpg";
+var imageURL3 = "assets/pizza_3.jpg";
+
 class Carousel extends StatelessWidget {
   const Carousel({Key? key}) : super(key: key);
 
@@ -18,20 +22,17 @@ class Carousel extends StatelessWidget {
           Container(
             width: 400,
             child: Image.network(
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEKgGdr29b9v3kFCwTab1ljYUdkQXllas0Hg&usqp=CAU",
+              imageURL1,
               // fit: BoxFit.fill,
             ),
           ),
           Container(
               width: 400,
               child: Image.network(
-                "https://dmkz2i5qfmsty.cloudfront.net/b8fa59bb-64df-4632-b26d-944291796e1a.jpg",
+                imageURL2,
                 // fit: BoxFit.fill,
               )),
-          Container(
-              width: 400,
-              child: Image.network(
-                  "https://dmkz2i5qfmsty.cloudfront.net/0e16ac69-667c-4fe9-bb6f-08f3a2be8ef5.jpg"))
+          Container(width: 400, child: Image.network(imageURL3))
         ],
       ),
     );

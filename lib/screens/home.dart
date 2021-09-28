@@ -4,7 +4,7 @@ import 'package:project_3/screens/ingredients.dart';
 import 'package:project_3/screens/carousel.dart';
 import 'package:project_3/custom-widget/card_pizza.dart';
 import 'package:project_3/custom-widget/custom_sidebar.dart';
-// import 'package:myfirstproject/custom-widget/spacing.dart';
+// import 'package:project_3/screens/bottom_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: CustomSideBar(),
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.red[700],
         elevation: 0,
