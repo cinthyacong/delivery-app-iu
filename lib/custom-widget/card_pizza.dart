@@ -49,22 +49,36 @@ class _ProductCardState extends State<ProductCard> {
             alignment: Alignment.bottomLeft,
             child: Container(
               height: 40,
-              // color: Colors.white,
+              color: Colors.black.withOpacity(0.7),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     child: Column(
                       children: [
-                        Text("${widget.title}"),
-                        Text("${widget.price}"),
+                        Text(
+                          "${widget.title}",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          "${widget.price}",
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.white,
+                          ),
+                        ),
                       ],
                     ),
                   ),
                   Container(
+                    color: Colors.red.shade700,
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.add),
+                      color: Colors.white,
                     ),
                   ),
                 ],

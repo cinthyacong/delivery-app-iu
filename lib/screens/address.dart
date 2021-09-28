@@ -17,7 +17,7 @@ class AddressScreen extends StatelessWidget {
           onPressed: () => {},
         ),
         title: Text(
-          "My Orders",
+          "My Address",
           style: TextStyle(
             fontSize: 18,
             color: Colors.white,

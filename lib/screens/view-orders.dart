@@ -151,7 +151,7 @@ class ViewOrdersScreen extends StatelessWidget {
         ),
         Container(
           // width: 400,
-          margin: const EdgeInsets.only(top: 120.0),
+          margin: const EdgeInsets.only(top: 30.0),
           height: 80,
           decoration: BoxDecoration(color: Colors.red.shade700),
           child:

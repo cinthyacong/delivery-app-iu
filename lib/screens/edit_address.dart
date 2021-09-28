@@ -45,7 +45,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
         ],
       ),
       body: Container(
-        padding: EdgeInsets.only(left: 16, top: 25, right: 16),
+        padding: EdgeInsets.only(left: 16, top: 5, right: 16),
         child: GestureDetector(
           onTap: () {
             FocusScope.of(context).unfocus();
@@ -53,12 +53,13 @@ class _EditProfilePageState extends State<EditProfilePage> {
           child: ListView(
             children: [
               SizedBox(
-                height: 15,
+                height: 5,
               ),
               Center(
                 child: Stack(
                   children: [
                     Container(
+                      height: 200,
                       width: 400,
                       child: Image.network(
                         imageURL,

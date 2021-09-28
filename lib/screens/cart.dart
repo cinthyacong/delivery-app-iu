@@ -34,7 +34,7 @@ class CartScreen extends StatelessWidget {
               CartItem(),
               CartItem(),
               CartItem(),
-              SizedBox(height: 270.0),
+              SizedBox(height: 200.0),
               ListTile(
                 title: Row(
                   children: [
@@ -71,7 +71,7 @@ class CartScreen extends StatelessWidget {
               ),
               Container(
                 // width: 400,
-                margin: const EdgeInsets.only(top: 20.0),
+                margin: const EdgeInsets.only(top: 10.0),
                 height: 80,
                 decoration: BoxDecoration(color: Colors.red.shade700),
                 child: Row(

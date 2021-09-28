@@ -6,6 +6,10 @@ import 'package:project_3/custom-widget/card_pizza.dart';
 import 'package:project_3/custom-widget/custom_sidebar.dart';
 // import 'package:project_3/screens/bottom_bar.dart';
 
+var imageURL1 = "assets/pizza_1.jpg";
+var imageURL2 = "assets/pizza_2.jpg";
+var imageURL3 = "assets/pizza_3.jpg";
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -27,24 +31,37 @@ class HomeScreen extends StatelessWidget {
           child: Column(children: [
             Carousel(),
             Ingredients(),
-            ProductCard(
-              imageURL:
-                  "https://media.istockphoto.com/photos/picking-slice-of-pepperoni-pizza-picture-id1133727757?k=20&m=1133727757&s=170667a&w=0&h=XMwhSokTuzGSE9ABV-T0w5Eo3GbxijMX54vAGaho1LI=",
-              title: "Pepperoni",
-              price: "\$300",
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ProductCard(
+                  imageURL: imageURL1,
+                  title: "Pepperoni",
+                  price: "\$300",
+                ),
+                ProductCard(
+                  imageURL: imageURL2,
+                  title: "Tomato",
+                  price: "\$450",
+                )
+              ],
             ),
-            ProductCard(
-              imageURL:
-                  "https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/63/2012/12/Chicken-mushroom-and-tomato-pizza.jpg",
-              title: "Tomato",
-              price: "\$450",
-            ),
-            ProductCard(
-              imageURL:
-                  "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/271000.jpg",
-              title: "Olives",
-              price: "\$200",
-            ),
+            SizedBox(height: 10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ProductCard(
+                  imageURL: imageURL3,
+                  title: "Olives",
+                  price: "\$200",
+                ),
+                ProductCard(
+                  imageURL: imageURL1,
+                  title: "Tomato",
+                  price: "\$450",
+                )
+              ],
+            )
           ]),
         ),
       ),
